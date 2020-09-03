@@ -11,17 +11,17 @@ def CoinToss():
     Orel = 0
     for amount in range(pocet):
         
-        #flips = [randint(0,1) for r in range(pocet)]
-        flips = random.randint(0,1)
-        if (flips == 1):
+        
+        hod = random.randint(0,1)
+        if (hod == 1):
             print("Panna")
             zaznamList.append("Panna")
             
-        elif(flips == 0):
+        elif(hod == 0):
             print("Orel")
             zaznamList.append("Orel")
             
         print(str(zaznamList))
-        print(str(zaznamList.count("Panna")) + " Pan " + str(zaznamList.count("Orel")) + " Orlů")
+        print(str(zaznamList.count("Panna")) + " Panen " + str(zaznamList.count("Orel")) + " Orlů")
 CoinToss()     
     
